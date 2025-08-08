@@ -13,6 +13,7 @@ public class WeightedUniformStringsUT
         var s = "abbcccdddd";
         var queries = new List<int> { 1, 7, 5, 4, 15 };
         var expected = new List<string> { "Yes", "No", "No", "Yes", "No" };
+        var actual = _solver.WeightedUniformStrings(s, queries);
         Assert.Equal(expected, _solver.WeightedUniformStrings(s, queries));
     }
 
